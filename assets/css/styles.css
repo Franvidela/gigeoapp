@@ -1,0 +1,170 @@
+/* DESKTOP - DISEÑO ESTÁTICO */
+  /* SELECTOR POR ETIQUETA */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
+}
+
+/* NAVEGACIÓN */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 60px;
+}
+
+.logo {
+  font-family: 'Century Gothic';
+}
+
+.logo p {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.logo sup {
+  font-size: 10px;
+  vertical-align: top;
+}
+
+.iconos a {
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none;
+  padding-inline: 10px;
+}
+
+/* PERFIL - HEADER */
+
+header .banner {
+  background-image: url(../img/image-banner.png);
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+  margin-bottom: 2rem;
+}
+
+header .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 60px;
+}
+
+header .profileimg {
+  display: flex;
+  align-items: center;
+}
+
+header .profileimg img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+header .nombre h2 {
+  font-size: 25px;
+
+}
+header .nombre p {
+  font-size: 15px;
+  color: gray;
+}
+
+header .botones {
+  display: flex;
+}
+
+header .boton1 {
+  background-color: rgb(144, 228, 200);
+  color: #ffffff;
+  font-size: 15px;
+  padding: 15px 10px;
+}
+
+header .boton2 {
+  background-color: rgb(221, 112, 112);
+  color: #ffffff;
+  font-size: 15px;
+  padding: 15px 10px;
+  margin-left: 10px;
+}
+
+section h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 60px;
+}
+
+section .videos {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 40px;
+  padding: 10px 60px;
+}
+
+section .videocard h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+section .videocard p {
+  font-size: 15px;
+  font-weight: 400;
+  color: gray;
+}
+
+section img {
+  width: 100%;
+  height: 60%;
+}
+
+/* Estilos Responsivos - Media Queries */
+
+@media (max-width: 767.98px) {
+  nav .ioculto, header .botones {
+      display: none;
+  }
+
+  nav {
+      margin: 0;
+      justify-content: space-around;
+  }
+
+  header .banner {
+      height: 15vh;
+  }
+
+  header .profile {
+      margin: 0;
+      justify-content: center;
+  }
+
+  hr {
+      display: none;
+  }
+
+  section h3 {
+      text-align: center;
+      margin-left: 0;
+  }
+
+  section .videos {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 10px;
+      padding: 10px;
+  }
+
+  section img {
+      height: auto;
+  }
+}
